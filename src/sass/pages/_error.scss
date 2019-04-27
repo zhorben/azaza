@@ -1,0 +1,31 @@
+.page-error {
+
+  .content {
+    text-align: center;
+  }
+
+  .error-code {
+    font-size: 240px;
+    background: linear-gradient(to right, #2A4F9A, #38CB4F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #38CB4F;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .error-description {
+    margin-bottom: 30px;
+    color: #1175c3;
+    font-size: em(18);
+  }
+
+  .go-button {
+    padding: 10px 58px;
+    @include fill-blue;
+    &:hover, &:active {
+      color: white;
+    }
+  }
+
+}

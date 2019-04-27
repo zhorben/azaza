@@ -1,0 +1,39 @@
+.main-header {
+  background-color: #000000;
+  color: #fff;
+  height: 60px;
+
+  a {
+    color: #eee;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+
+  .lang-block {
+    position: relative;
+    float: right;
+    height: 100%;
+
+    &.show-dd .submenu {
+      display: block;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 30px;
+      right: 0;
+      background-color: red;
+
+      a {
+        display: block;
+        padding: 5px 13px;
+        line-height: normal;
+      }
+    }
+  }
+
+
+}

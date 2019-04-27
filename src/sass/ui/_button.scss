@@ -1,0 +1,20 @@
+@mixin button-fill($bg, $text-color) {
+  display: inline-block;
+  color: $text-color;
+  border: none;
+  border-radius: 3px;
+  background-color: $bg;
+}
+
+@mixin fill-blue {
+  @include button-fill(#2a4f9a, #dddfe5);
+
+  &:hover {
+    text-decoration: none;
+    background: #1175c3;
+  }
+
+  &:active {
+    background: #1d4087;
+  }
+}
